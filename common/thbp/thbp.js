@@ -38,7 +38,7 @@ var counter = document.getElementById('counter');
 var tmpl = Handlebars.compile(document.getElementById('template-counter').innerHTML);
 
 Handlebars.registerHelper('pluralize', function(val, str) {
-  return str + (val !== 1 ? 's' : '');
+  return str + (val !== "1" ? 's' : '');
 });
 
 var adj = adjectives[Math.floor(Math.random()*adjectives.length)];
