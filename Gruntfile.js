@@ -2,7 +2,7 @@
  * Gruntfile
  *
  * Author(s):  Jonathan "Yoni" Knoll
- * Version:    0.1.2
+ * Version:    0.1.3
  * Date:       2017-03-06
  *
  */
@@ -43,6 +43,7 @@ module.exports = function(grunt) {
   // Register Default task(s).
   grunt.registerTask('build', function() {
     grunt.file.write('VERSION', pkg.version);
+    grunt.task.run('collect');
   });
 
   grunt.registerTask('copy-assets', ['copy:fonts', 'copy:assets']);

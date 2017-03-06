@@ -3,7 +3,7 @@
  * Name: index/index.js
  * Author(s): infinityplusone
 
- * Version:    0.1.2
+ * Version:    0.1.3
  * Last Modified: 2017-03-06
  *
  * Notes: 
