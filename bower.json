@@ -1,0 +1,30 @@
+{
+  "name": "trumphasbeenpresident.com",
+  "version": "0.0.1",
+  "title": "trumphasbeenpresident.com",
+  "description": "Just how fucking long has it been?",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infinityplusone/trumphasbeenpresident.com.git"
+  },
+  "authors": [
+    "Jonathan \"Yoni\" Knoll"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/infinityplusone/trumphasbeenpresident.com.git",
+  "dependencies": {
+    "lodash": "*",
+    "requirejs": "^2.1.22",
+    "requirejs-text": "^2.0.12",
+    "moment": "momentjs#^2.17.1",
+    "handlebars": "^4.0.5"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "scripts",
+    "tasks",
+    "test",
+    "tests"
+  ]
+}

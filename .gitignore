@@ -1,0 +1,10 @@
+.DS_Store
+.DS_Store?
+Thumbs.db
+npm-debug.log
+
+### generated & installed files
+/node_modules
+/bower_components
+/assets
+hippo-schema.json
