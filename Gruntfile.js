@@ -46,6 +46,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('copy-assets', ['copy:fonts', 'copy:assets']);
+  grunt.registerTask('collect', ['copy-assets', 'less']);
   grunt.registerTask('default', ['collect', 'simple-watch']);
 
   console.log('\n');
