@@ -2,7 +2,7 @@
  * Gruntfile
  *
  * Author(s):  Jonathan "Yoni" Knoll
- * Version:    0.1.4
+ * Version:    0.2.0
  * Date:       2017-03-06
  *
  */
