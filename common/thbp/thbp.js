@@ -14,8 +14,8 @@
   var end = '2021-01-20T12:00:00-05:00';
   var totalLength = moment(end).diff(moment(start), 'seconds', true);
   var urlPath = location.pathname
+                          .replace(/trumphasbeenpresident\.com/, '') // only matters locally
                           .replace(/\/index\.php/, '')
-                          .replace(/[^\/]+\//, '')
                           .replace(/[^A-Za-z0-9\-]+/gim, ' ')
                           .replace(/(^\s*|\s$)/, '');
 

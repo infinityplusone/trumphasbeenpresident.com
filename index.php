@@ -4,7 +4,7 @@
 		<title>Trump has been President for...</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<?php $root = preg_replace('/^\/(.*)\/index.php/i', "/$1", $_SERVER["PHP_SELF"]); ?>
+		<?php $root = preg_replace('/^\/(.*)$/i', "/$1", str_ireplace('/index.php', '', $_SERVER["PHP_SELF"])); ?>
 		<link rel="stylesheet" href="<?=$root?>/assets/thbp.css">
 	</head>
 	<body class="page page__index" data-page="index">
