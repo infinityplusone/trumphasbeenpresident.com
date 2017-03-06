@@ -71,5 +71,7 @@ rm -rf VERSION
 
 # go back to where you started
 git checkout $branch
-
+rm -rf bower_components
+bower install
+grunt collect
 echo "${green}Done!${nc}\n\n"
