@@ -49,8 +49,9 @@ git checkout -b latest
 
 # force add external libs & assets to repo
 git add assets --force
-git add bower_components/handlebars/handlebars.min.js --force
+git add bower_components/jquery/dist/jquery.min.js --force
 git add bower_components/moment/min/moment.min.js --force
+git add bower_components/handlebars/handlebars.min.js --force
 
 # add the distribution file & push it
 echo "Adding build file to latest branch and pushing to remote.\n"
