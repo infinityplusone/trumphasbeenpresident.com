@@ -13,9 +13,6 @@
   "license": "MIT",
   "homepage": "https://github.com/infinityplusone/trumphasbeenpresident.com.git",
   "dependencies": {
-    "lodash": "*",
-    "requirejs": "^2.1.22",
-    "requirejs-text": "^2.0.12",
     "moment": "momentjs#^2.17.1",
     "handlebars": "^4.0.5"
   },

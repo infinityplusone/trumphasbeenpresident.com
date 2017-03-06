@@ -40,6 +40,7 @@ module.exports = function(grunt) {
   });
 
   // Register Default task(s).
+  grunt.registerTask('prep-build', 'Adds files for build', function() {});
   grunt.registerTask('copy-assets', ['copy:fonts', 'copy:assets']);
   grunt.registerTask('default', ['collect', 'simple-watch']);
 

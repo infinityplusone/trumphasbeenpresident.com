@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Formatting variables
+blackBG='\033[1;40m'
+cyan='\033[1;36m'$blackBG
+gray='\033[1;37m'$blackBG
+green='\033[1;32m'$blackBG
+purple='\033[1;35m'$blackBG
+red='\033[0;31m'$blackBG
+yellow='\033[1;33m'$blackBG
+nc='\033[0m'$blackBG
+
+script=$1
+
+if [[ $(pwd) == *"necromancy"* ]]; then
+  scripts=scripts
+else
+  scripts=node_modules/necromancy/scripts
+fi
+
+fullScript=${scripts}/${script}.sh
+
+echo "\n"
+
+if [[ $script == "" || $script == "--help" ]]; then
+  echo "  Usage: ${cyan}scripts/run SCRIPT_NAME${nc}\n"
+  echo "  Available scripts are:"
+  for entry in "$scripts"/*.sh
+  do
+    printf "\n$cyan"
+    printf $entry | sed -e "s/.*\//    /g" | sed -e "s/\.sh//g"
+  done
+else
+  if [ -e $fullScript ]; then
+    sh $fullScript
+  else
+    echo "${yellow}Invalid script: ${script}${nc}"
+  fi
+fi
+
+echo "\n${nc}"
