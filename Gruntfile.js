@@ -10,9 +10,10 @@
 module.exports = function(grunt) {
 
   var _ = require('lodash');
+  var pkg = grunt.file.readJSON('./package.json');
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('./package.json')
+    pkg: pkg
   });
 
   grunt.loadNpmTasks('necromancy');
