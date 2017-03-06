@@ -29,7 +29,7 @@ fi
 # get everything ready
 echo "Updating bower components and generating build file.\n"
 rm -rf bower_components
-bower update
+bower install
 grunt build
 
 # figure out the version
