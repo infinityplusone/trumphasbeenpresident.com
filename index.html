@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trump has been President for...</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="/assets/thbp.css">
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/moment/min/moment.min.js"></script>
+		<script src="/bower_components/handlebars/handlebars.min.js"></script>
+		<script src="/common/thbp/thbp.js"></script>
+		<script type="text/x-handlebars-template" data-template-id="counter">
+			<div class="counter">
+				{{#each counter}}
+					{{#if this}}
+						<div class="time-row time-row--{{@key}}">
+							<span class="time-value">{{this}}</span>
+							<span class="time-key">{{pluralize this @key}}</span>
+						</div>
+					{{/if}}
+				{{/each}}
+			</div>
+		</script>
+		<script type="text/x-handlebars-template" data-template-id="percent">
+			<h1 class="counter-percent">We are just <strong>{{percent}}%</strong> of our<br> way through this <br><span class="descriptor"><strong class="adjective">{{adj}}</strong> presidency.</span></h1>
+		</script>
+	</head>
+	<body class="thbp">
+		<form action="/" method="post" class="content">
+			<h1><strong>Donald Trump</strong> has been<br> <strong class="potus">President of the United States</strong></h1>
+			<div class="counter"></div>
+			<h1 class="percent">We are not nearly through this <br><span class="descriptor"><strong class="adjective">unbearable</strong> presidency.</span></h1>
+			<input type="text" name="adjective" class="input" placeholder="How would you describe it?">
+		</form>
+
+	</body>
+</html>

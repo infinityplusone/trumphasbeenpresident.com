@@ -1,6 +1,6 @@
 {
   "name": "trumphasbeenpresident.com",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Just how fucking long has it been?",
   "repository": {
     "type": "git",
@@ -9,11 +9,11 @@
   "license": "MIT",
   "devDependencies": {
     "colors": "^1.1.2",
-    "grunt": "^1.0.1",
+    "grunt": "^0.4.5",
     "less-plugin-autoprefix": "^1.5.1",
     "necromancy": "git+https://github.com/infinityplusone/necromancy.git"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^3.10.1"
   }
 }
