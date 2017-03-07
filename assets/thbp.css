@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Lubalin';
+  src: url('fonts/LubalinGraphStd-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Lubalin-Md';
+  src: url('fonts/LubalinGraphStd-Medium.otf') format('opentype');
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lubalin';
+}
+html *,
+body * {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+}
+.content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 2vh 0 7vh;
+}
+.content .input {
+  position: fixed;
+  border: 0 none;
+  outline: 0 none;
+  background: rgba(188, 0, 0, 0.1);
+  font-size: 5vh;
+  padding: 10px 5px 0;
+  transition: opacity 0.25s ease-in-out;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #bc0000;
+  font-family: 'Lubalin';
+  height: 7vh;
+}
+.content input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.content input:focus:-moz-placeholder {
+  color: transparent;
+}
+.content input:focus::-moz-placeholder {
+  color: transparent;
+}
+.content input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.content .adjective {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+.content .adjective:after {
+  content: "^";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 14vh;
+}
+.content h1 {
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+  width: 95%;
+}
+.content h1 strong {
+  font-family: 'Lubalin-Md';
+  color: #bc0000;
+}
+.content h1 strong.potus {
+  color: #002868;
+}
+.portrait .content h1 .descriptor,
+.landscape .content h1 .descriptor {
+  white-space: nowrap;
+}
+.portrait .content h1 .descriptor.long,
+.landscape .content h1 .descriptor.long {
+  white-space: normal;
+}
+.portrait .content h1 .descriptor.long .adjective:after,
+.landscape .content h1 .descriptor.long .adjective:after {
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: 75%;
+}
+.portrait .content {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 4vh;
+}
+.portrait .content h1 {
+  font-size: 6.25vw;
+}
+.portrait .content .input {
+  font-size: 7vw;
+}
+.landscape .content {
+  padding-top: 4vh;
+}
+.landscape .content h1 {
+  font-size: 3.5vw;
+  width: 99%;
+}
+.landscape .content h1 br {
+  display: none;
+}
+.landscape .content .input {
+  font-size: 7vh;
+}
+.counter {
+  margin: 1rem 0 0;
+  width: 100%;
+}
+.counter .time-row {
+  float: left;
+  padding: 1rem 0;
+  text-align: center;
+  width: 50%;
+  font-size: 3vw;
+}
+.landscape .counter .time-row {
+  font-size: 5vh;
+}
+.counter .time-row .time-key,
+.counter .time-row .time-value {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+.counter .time-row .time-value {
+  color: #bc0000;
+  font-weight: bold;
+  font-size: 5em;
+  font-style: italic;
+}
+@media (min-width: 568px) {
+  .landscape .content .time-row {
+    width: 25%;
+    font-size: 3vh;
+  }
+}
+@media (min-width: 769px) {
+  .content h1.counter-percent br {
+    display: none;
+  }
+  .counter {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .content .time-row {
+    width: 25%;
+    font-size: 3vh;
+  }
+}
